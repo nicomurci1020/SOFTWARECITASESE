@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+     margin-left: 40%;
+}
+ 
+ 
+.flag {
+    width: 270px;
+    height: 180px;
+    box-shadow: 0px 0px 90px 1px #989;
+    background-color: transparent;
+    position: relative;
+}
+
+.top {
+    height: 80px;
+    background-color: yellow;
+}
+ 
+.middle {
+    height: 60px;
+    background-color: blue;
+}
+ 
+.bottom {
+    height: 60px;
+    background-color: red;
+}
+h1 {
+    margin-left: 35%;
+    transition: background ease-in .3s;
+}
+
+
+.h1_1 {
+    transition: ease-in .4s;
+}
+
+h1:hover {
+    color: rgb(104, 103, 103);
+}
