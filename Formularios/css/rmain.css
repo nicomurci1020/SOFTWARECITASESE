@@ -440,6 +440,9 @@ h6 {
 .btn--red:hover {
   background: #eb3746;
 }
+.botones{
+  position: relative;
+}
 
 /* /* ==========================================================================
    #DATE PICKER

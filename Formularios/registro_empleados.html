@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro Empleados</title>
+
+    <!-- Bootstrap -->
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/rmain.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/img-03.png"></img></a>
+                </div>
+                <div class="main_list" id="mainListDiv">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Citas</a></li>
+                        <li><a href="#">Contactar</a></li>
+                    </ul>
+                </div>
+                <div class="media_button">
+                    <button class="main_media_button" id="mediaButton">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+                <div class="wrapper wrapper--w960">
+                    <div class="card card-5">
+                        <div class="card-heading">
+                            <h2 class="title">Registro de Empleados</h2>
+                        </div>
+                        <div class="card-body">
+                            <form method="POST">
+                                <div class="form-row m-b-55">
+                                    <!--  Filas Del Formulario -->
+                                    <div class="name">Identificación</div>
+                                    <div class="value">
+                                        <div class="row row-space">
+                                            <div class="col-2">
+                                                <div
+                                                    class="input-group-desc rs-select2 js-select-simple select--no-search">
+                                                    <select id="id-document" name="id-document" required="required">
+                                                        <option value="CC">Cedula de Ciudadania</option>
+                                                        <option value="CE">Cedula de extranjeria</option>
+                                                        <option value="NIP">Numero de Identificación Personal</option>
+                                                        <option value="NIT">Numero de Identificación Tributaria</option>
+                                                        <option value="TI">Tarjeta de Identidad</option>
+                                                        <option value="PAP">Pasaporte</option>
+                                                    </select>
+                                                    <div class="select-dropdown"></div>
+                                                    <label class="label--desc">Tipo de Documento</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="input-group-desc">
+                                                    <input class="input--style-5" type="text" name="last_name">
+                                                    <label class="label--desc">Numero de Documento</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- Fin  Filas Del Formulario -->
+                                <div class="form-row m-b-55">
+                                    <!--  Filas Del Formulario -->
+                                    <div class="name">Apellidos</div>
+                                    <div class="value">
+                                        <div class="row row-space">
+                                            <div class="col-2">
+                                                <div class="input-group-desc">
+                                                    <input class="input--style-5" type="text" name="first_name">
+                                                    <label class="label--desc">Primer Apellido</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="input-group-desc">
+                                                    <input class="input--style-5" type="text" name="last_name">
+                                                    <label class="label--desc">Segundo Apellido</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- Fin  Filas Del Formulario -->
+                                <div class="form-row m-b-55">
+                                    <div class="name">Nombre</div>
+                                    <div class="value">
+                                        <div class="row row-space">
+                                            <div class="col-2">
+                                                <div class="input-group-desc">
+                                                    <input class="input--style-5" type="text" name="first_name">
+                                                    <label class="label--desc">Primer Nombre</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="input-group-desc">
+                                                    <input class="input--style-5" type="text" name="last_name">
+                                                    <label class="label--desc">Segundo nombre</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row m-b-55">
+                                    <!--  Filas Del Formulario -->
+                                    <div class="name">Datos de Contacto</div>
+                                    <div class="value">
+                                        <div class="row row-space">
+                                            <div class="input-group-desc">
+                                                <input class="input--style-5" type="text" name="first_name">
+                                                <label class="label--desc">Telefono</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- Fin  Filas Del Formulario -->
+                                <div class="form-row">
+                                    <!--  Filas Del Formulario -->
+                                    <div class="name"></div>
+                                    <div class="value">
+                                        <div class="row row-space">
+                                            <div class="col-2">
+                                                <div
+                                                    class="input-group-desc rs-select2 js-select-simple select--no-search">
+                                                    <select id="id-Ocupacion" name="id-cargo" required="required">
+                                                        <option value="MES">Opción 1</option>
+                                                        <option value="CAU">Opción 2</option>
+                                                        <option value="AFR">Opción 3</option>
+                                                        <option value="PAL">Opción 4</option>
+                                                        <option value="RAI">Opción 5</option>
+                                                        <option value="IND">Opción 6</option>
+                                                    </select>
+                                                    <div class="select-dropdown"></div>
+                                                    <label class="label--desc">Cargo</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div
+                                                    class="input-group-desc rs-select2 js-select-simple select--no-search">
+                                                    <select id="id-ecivil" name="id-especialidad" required="required">
+                                                        <option value="MES">Opción 1</option>
+                                                        <option value="CAU">Opción 2</option>
+                                                        <option value="AFR">Opción 3</option>
+                                                        <option value="PAL">Opción 4</option>
+                                                        <option value="RAI">Opción 5</option>
+                                                        <option value="IND">Opción 6</option>
+                                                    </select>
+                                                    <div class="select-dropdown"></div>
+                                                    <label class="label--desc">Especialidad</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- Fin  Filas Del Formulario -->
+                                <div class="form-row">
+                                    <div class="name">Email</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="email" name="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                
+                                    <div class="col-2">
+                                        <button class="btn btn--radius-2 btn--red" type="submit">Cancelar</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn--radius-2 btn--blue" type="submit">Registrar</button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        
+
+    </main>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/rglobal.js"></script>
+
+</body>
+
+</html>
