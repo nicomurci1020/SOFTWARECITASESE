@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario creacion libros años</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <!-- LOGOS  -->
+        <!--<div id="logo">texto</div>-->
+        <div class="logo">
+            <img src="/img/imagen2.jpg" alt="LOGO" height="180px"/>
+        </div>
+        <div id="titulo">
+            <h2>BIBLIOTECA G74</h2>
+
+        </div>
+
+
+        <!--<img src="/img/imagen2.jpg" alt="LOGO" />-->
+
+       <!-- <nav>
+            <ul>
+                <li>
+                    <a href="https://www.biografiasyvidas.com/biografia/g/garcia_marquez.htm" >Biografia
+                    </a>
+                </li>
+                <li><a href="https://www.bbc.com/mundo/video_fotos/2014/04/140403_galeria_garcia_marquez_ob_ng"> Fotos</a></li>
+                <li><a href="https://www.iberlibro.com/libros/autores-escritores/gabriel-garcia-marquez.shtml">Libros</a></li>
+            </ul>-->    
+            <!--EJEMPLO ol -->
+            
+    
+        </nav>
+    </header>
+    
+
+    <main>
+        <center>
+        <h1>FORMULARIO</h1>
+        <form>
+            <label for="nombre" >Nombre</label>&nbsp;&nbsp;&nbsp;&nbsp;                     
+            <input type="text" name="nombre" id="nombre" maxlength="50" 
+            required="true" placeholder="Ingresar nombre" style="width: 300px; color:black; background:wheat;"></input>&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+            <label for="fecha">Fecha Nacimiento</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" name="fecha" id="fecha" size=40 required /><br /><br />
+            <label for="telefono">Numero telefono</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" name="telefono" id="telefono" size=40 /><br /><br />
+            <label for="correo">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="correo" id="correo" size=40 /><br /><br />
+            <label for="ciudad">Ciudad</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="ciudad" id="ciudad">
+                <option value="1">Bogota</option>
+                <option value="2">Medellin</option>
+                <option value="3">Bucaramanga</option>
+
+            </select><br /><br />
+            <label for="observaciones">Observaciones</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea name="observaciones" id="observaciones" rows="10" cols="30"></textarea><br /><br />
+            <label>Genero:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Masculino</label>
+            <input type="radio" name="genero" id="masculino" value="Masculino" />
+            <label>Femenino</label>
+            <input type="radio" name="genero" id="femenino" value="Femenino" /><br /><br />
+            
+            <label>Ingresar materias:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Matematicas</label>
+            <input type="checkbox" name="materias" id="matematicas" />
+            <label>Quimica</label>
+            <input type="checkbox" name="materias" id="quimica" />
+            <label>Fisica</label>
+            <input type="checkbox" name="materias" id="fisica" /><br /><br />
+
+            <button>Grabar</button>
+        </form>
+        <h3>MOSTRAR INFORMACION HORARIOS</h3>
+        <table style="border:1px solid black">
+            <tr style="border:1px solid black">
+                <th></th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIERCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+            </tr>
+            <tr style="border:1px solid black">
+                <td>6-8</td>
+                <td>QUIMICA</td>
+                <td>FISICA</td>
+                <td>MATEMATICA</td>
+                <td>ESPAÑOL</td>
+                <td>INGLES</td>
+            </tr>
+            <tr>
+                <td>8-10</td>
+                <td>QUIMICA</td>
+                <td>FISICA</td>
+                <td>MATEMATICA</td>
+                <td>ESPAÑOL</td>
+                <td>INGLES</td>
+            </tr>
+        </table>
+
+
+        <br />
+        <br />
+
+
+        <br /><br /><br />
+        <br />
+
+
+        </center>
+
+        <center>
+            <h1>TITULO MAIN</h1>
+            <a href="https://www.traveler.es/experiencias/galerias/paisajes-de-la-vida-de-gabriel-garcia-marquez/1329">
+                <img src="https://picsum.photos/700/400?random" alt="paisaje" />
+            </a>        
+
+            <p><a href="https://es-la.facebook.com/public/Gabriel-Garcia">Facebook Gabriel garcia Marquez</a></p>
+        </center>
+    </main>
+    <footer>
+        <h3>TITULO FOOTER</h3>
+    </footer>
+</body>
+</html>
